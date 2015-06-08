@@ -2,7 +2,9 @@
 <h1>Account Registration</h1>
 
 <%= render 'form' %>
-
+<%= form_for(@user) do |f| %>
+<%= f.submit "Create my account", class: "btn btn-primary" %>
+<% end %>
 <p>Already a user? <%= link_to 'Login', login_path %></p>
 
 
